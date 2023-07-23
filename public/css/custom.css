@@ -1,0 +1,94 @@
+html{font-size: 14px;}
+.fetch-detail{}
+.fetch-detail .list-group{}
+.fetch-detail li{
+    border: none;
+    color: #000;
+    padding: 7px 0 0;}
+.fetch-detail li.active{
+    background: transparent;
+    border-bottom: 1px solid #343482;
+    color: #000;
+    padding-bottom: 5px;
+}
+.fetch-detail li.active:hover,.fetch-detail li.active:focus{
+    background: transparent !important;
+    border-bottom: 1px solid #343482;
+    color: #000;
+}
+.fetch-detail li span{font-size: 13px;}
+.description-div{
+    margin-bottom: 0;
+}
+.description-text{
+    font-size: 12px;
+    word-break: break-word;
+    border: 1px solid #eee;
+    padding: 5px;
+    height: 68px;
+    width: 100%;
+    overflow-y: auto;
+}
+.form-check .form-check-label {
+    cursor: pointer;
+    padding-left: 25px;
+    position: relative;
+}
+.form-check .form-check-input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.form-check-sign {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.form-check:hover input ~ .form-check-sign {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.form-check input:checked ~ .form-check-sign {
+    background-color: #343482;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.form-check-sign:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.form-check input:checked ~ .form-check-sign:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.form-check .form-check-sign:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.form-check .form-check-sign {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
